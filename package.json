@@ -1,0 +1,19 @@
+{
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "name": "autocast",
+  "description": "Easily and automatically cast common datatypes in JavaScript",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bahamas10/node-autocast.git"
+  },
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
