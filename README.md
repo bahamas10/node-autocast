@@ -6,7 +6,7 @@ Easily and automatically cast common datatypes in JavaScript
 Install
 ------
 
-Install locally to use as a madule
+Install locally to use as a module
 
     npm install autocast
 
