@@ -15,5 +15,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "keywords": [ "auto", "cast", "typecast", "convert" ]
 }

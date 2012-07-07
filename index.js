@@ -15,7 +15,7 @@ module.exports = function(s) {
   // Try to cast it to a number
   if (+s) return +s;
 
-  // Try to make it a comman string
+  // Try to make it a common string
   for (var key in common_strings) {
     if (s === key) return common_strings[key];
   }
