@@ -10,6 +10,9 @@ console.log('Testing Numbers...');
 assert.strictEqual(autocast('5'), 5);
 assert.strictEqual(autocast('5.6'), 5.6);
 assert.strictEqual(autocast('5.6.7'), '5.6.7');
+assert.strictEqual(autocast('0'), 0);
+assert.strictEqual(typeof autocast('NaN'), 'number');
+assert.ok(isNaN(autocast('NaN')));
 console.log('ok');
 
 console.log('Testing common data types...');
