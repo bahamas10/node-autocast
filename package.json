@@ -1,7 +1,7 @@
 {
   "name": "autocast",
   "description": "Easily and automatically cast common datatypes in JavaScript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
   "contributors": [
     "Kit Cambridge <kitcambridge@me.com>"
