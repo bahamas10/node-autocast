@@ -15,6 +15,9 @@ var common_strings = {
 module.exports = function(s) {
   var key;
 
+  // Don't cast Date objects
+  if (s && s.getTimezoneOffset) return s;
+
   // Try to cast it to a number
   if ((key = +s) == key) return key;
 

@@ -4,7 +4,8 @@
  */
 
 var assert = require('assert'),
-    autocast = require('../');
+    autocast = require('../'),
+    tmp;
 
 console.log('Testing Numbers...');
 assert.strictEqual(autocast('5'), 5);
@@ -25,4 +26,9 @@ console.log('ok');
 console.log('Testing strings...');
 assert.strictEqual(autocast('some string'), 'some string');
 assert.strictEqual(autocast('!'), '!');
+console.log('ok');
+
+console.log('Testing dates...');
+tmp = new Date();
+assert.strictEqual(autocast(tmp), tmp);
 console.log('ok');
