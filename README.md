@@ -3,26 +3,28 @@ autocast
 
 Easily and automatically cast common datatypes in JavaScript
 
-Install
-------
-
-Install locally to use as a module
-
-    npm install autocast
-
 Usage
 -----
 
+Node.js
+
 ``` js
 var autocast = require('autocast');
+```
+
+Web
+
+``` html
+<script src="autocast.min.js"></script>
+<!-- // defines autocast() -->
 ```
 
 Example
 -------
 
 ``` js
-var autocast = require('autocast'),
-    x;
+var autocast = require('autocast');
+var x;
 
 x = autocast('5')
 // x => 5
@@ -39,6 +41,11 @@ x = autocast('false')
 x = autocast('normal string')
 // x => 'normal string'
 ```
+
+Install
+------
+
+    npm install autocast
 
 Tests
 -----
