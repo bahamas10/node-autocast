@@ -3,9 +3,8 @@
  * Tests for autocast
  */
 
-var assert = require('assert'),
-    autocast = require('../'),
-    tmp;
+var assert = require('assert');
+var autocast = require('../');
 
 console.log('Testing Numbers...');
 assert.strictEqual(autocast('5'), 5);
@@ -29,6 +28,6 @@ assert.strictEqual(autocast('!'), '!');
 console.log('ok');
 
 console.log('Testing dates...');
-tmp = new Date();
+var tmp = new Date();
 assert.strictEqual(autocast(tmp), tmp);
 console.log('ok');
