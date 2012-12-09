@@ -16,7 +16,7 @@ module.exports = function(s) {
   var key;
 
   // Don't cast Date objects
-  if (s && s.getTimezoneOffset) return s;
+  if (s instanceof Date) return s;
 
   // Try to cast it to a number
   if ((key = +s) == key) return key;
