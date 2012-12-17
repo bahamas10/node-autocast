@@ -13,6 +13,9 @@ assert.strictEqual(autocast('5.6.7'), '5.6.7');
 assert.strictEqual(autocast('0'), 0);
 assert.strictEqual(typeof autocast('NaN'), 'number');
 assert.ok(isNaN(autocast('NaN')));
+assert.strictEqual(autocast('0xff'), 255);
+assert.strictEqual(autocast('1e3'), 1000);
+assert.strictEqual(autocast('0001'), 1);
 console.log('ok');
 
 console.log('Testing common data types...');

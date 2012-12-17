@@ -23,27 +23,32 @@ Example
 -------
 
 ``` js
-var autocast = require('autocast');
-var x;
-
-x = autocast('5')
-// x => 5
-x = autocast('5.8')
-// x => 5.8
-x = autocast('5.8.8')
-// x => '5.8.8'
-x = autocast('null')
-// x => null
-x = autocast('undefined')
-// x => undefined
-x = autocast('NaN')
-// x => NaN
-x = autocast('true')
-// x => true
-x = autocast('false')
-// x => false
-x = autocast('normal string')
-// x => 'normal string'
+> var autocast = require('autocast');
+[Function: autocast]
+> autocast('5')
+5
+> autocast('5.8')
+5.8
+> autocast('5.8.8')
+'5.8.8'
+> autocast('null')
+null
+> autocast('undefined')
+undefined
+> autocast('NaN')
+NaN
+> autocast('true')
+true
+> autocast('false')
+false
+> autocast('normal string')
+'normal string'
+> autocast('0xff')
+255
+> autocast('1e3')
+1000
+> autocast('0001')
+1
 ```
 
 Install
